@@ -37,7 +37,9 @@ public class PlayerController : MonoBehaviour
     }
 
     private void MoveObject(Vector2 movement)
-    {
+    {   
+        //Log Paddle Player Movement
+        Debug.Log("Paddle Move Tracker :" + movement);
         //Moving object using input
         rig.velocity = movement;
     }
